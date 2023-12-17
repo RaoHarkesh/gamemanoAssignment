@@ -31,7 +31,7 @@ const HomePage: React.FC<Props> = ({products}) =>{
                     <span className={styles.heroText}>The Techies You Love</span>
                     <div className={styles.gradLine} />
                 </div>
-                <HeroButton/>
+                <HeroButton path="/products" />
             </div>
             </>
         </Hero>

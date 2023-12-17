@@ -38,9 +38,9 @@
 }
 
 .gridWrap {
- display: grid;
- grid-template-columns: repeat(3, 1fr); /* Three columns */
-  grid-gap: 100px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 100px; 
 }
 
 .proHeadline {
