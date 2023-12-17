@@ -1,0 +1,28 @@
+.heroMidImg {
+    width: 300px;
+}
+
+.filterSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.breadCrumb {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+
+.screenWrapper {
+    padding-top: 20px;
+}
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 100px; 
+}
