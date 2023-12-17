@@ -1,0 +1,44 @@
+.buttonWrap {
+    border-radius: 15px;
+    position: relative;
+    height: 30px;
+    width: 150px;
+    background: linear-gradient(90deg, 
+    #920AA8 0%, 
+    #E019CC 12.5%, 
+    #FF81E3 25%, 
+    #FC75D6 37.5%, 
+    #DF55F6 50%, 
+    #E822EC 62.5%, 
+    #E80F91 75%, 
+    #ED19D8 87.5%, 
+    #FE3873 100%);
+    padding: 0 10px;
+}
+
+.heroButton {
+    border: 2px solid #E019CC;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 200px;
+    height: 40px;
+    left: 2px;
+    font-size: 14px;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    z-index: 1;
+    color: white;
+    font-weight: 500;
+    padding:0 20px;
+}
+
+.arrowImg {
+    width: 20px;
+    height: 20px;
+}

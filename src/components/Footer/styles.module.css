@@ -1,0 +1,55 @@
+.footerTopImage {
+    width: 100%;
+}
+
+.footerWrapper {
+    background-color: #050A32;
+    width: 100%;
+}
+
+.footerWrapperInner {
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footerlogo {
+    width: 100px;
+}
+
+.compInfo {
+    font-size: 16px;
+    color: white;
+}
+
+.footerCol {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+.followHeadline {
+    width: 120px;
+}
+
+.socialLinksWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.socialMediaLogo {
+    width: 30px;
+    cursor: pointer;
+}

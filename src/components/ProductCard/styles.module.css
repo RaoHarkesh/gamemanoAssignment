@@ -1,0 +1,76 @@
+.cardWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    border-radius: 14px;
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 20px;
+}
+
+.imgSection {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.titleSection {
+    font-size: 16px;
+    text-align: center;
+}
+
+.viewButton {
+    height: 50px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, 
+    #920AA8 0%, 
+    #E019CC 12.5%, 
+    #FF81E3 25%, 
+    #FC75D6 37.5%, 
+    #DF55F6 50%, 
+    #E822EC 62.5%, 
+    #E80F91 75%, 
+    #ED19D8 87.5%, 
+    #FE3873 100%);
+}
+
+.circleArrow {
+    width: 20px;
+    height: 20px;
+}
+
+.likeIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.ArrowCircleDark {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likeText {
+    color: #A8620A;
+}

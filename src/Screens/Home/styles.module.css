@@ -1,0 +1,63 @@
+.heroMidWrap {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ align-items: center;
+}
+
+.heroMidImg {
+    width: 300px;
+}
+
+.heroTextWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gradLine {
+    height: 6px;
+    width: 60px;
+    background: linear-gradient(90deg, 
+    #A8620A 0%, 
+    #E09519 14.285%, 
+    #FFE581 28.57%, 
+    #FCDC75 42.855%, 
+    #F6C755 57.14%, 
+    #ECA522 71.425%, 
+    #E8980F 85.71%, 
+    #FEB838 100%
+  );
+}
+
+.heroText {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.gridWrap {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 100px; 
+}
+
+.proHeadline {
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.screenWrapper {
+    padding-top: 20px;
+}
+
+.gridUnit {
+    padding: 10px;
+    height: 100%;
+}
+
+.positionCarousel {
+    transform: translateY(-100px);
+}

@@ -1,0 +1,71 @@
+.navouter {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #26072C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navinner {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    width: 50px;;
+}
+
+.navinnerright {
+    display: flex;
+    gap: 30px;
+}
+
+.navbuttonwrap {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(90deg, 
+    #920AA8 0%, 
+    #E019CC 12.5%, 
+    #FF81E3 25%, 
+    #FC75D6 37.5%, 
+    #DF55F6 50%, 
+    #E822EC 62.5%, 
+    #E80F91 75%, 
+    #ED19D8 87.5%, 
+    #FE3873 100%);
+}
+
+.navbuttonprimary {
+    border: 2px solid transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    left: 2px;
+    font-size: 16px;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #380D41;
+    z-index: 1;
+    color: white;
+    font-weight: 500;
+}
+
+.navbuttonsecondary {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
