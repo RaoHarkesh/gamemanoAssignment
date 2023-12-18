@@ -35,7 +35,8 @@ const HomePage: React.FC<Props> = ({products}) =>{
             </div>
             </>
         </Hero>
-         <div className={`mw-1300 bg-theme-purple ${styles.screenWrapper}`}>
+        <div className="bg-theme-purple">
+         <div className={`mw-1300 ${styles.screenWrapper}`}>
             <div className={styles.positionCarousel}>
             <Carousel count={products?.length || 0}>
                 <>
@@ -49,6 +50,7 @@ const HomePage: React.FC<Props> = ({products}) =>{
             <div className={styles.gridWrap}>
             {products?.map((ele)=><ProductCard key={ele.id} id={ele.id} thumbnail={ele.images[1]} title={ele.title} />)}
             </div>
+         </div>
         </div>
         </>
     )
