@@ -6,7 +6,29 @@
     right: 0;
     border: 2px solid #920AA8;
     width: 150px;
+    max-height: 300px;
+    overflow-y: scroll;
+    
 }
+
+.selectWrapper::-webkit-scrollbar {
+    width: 0; /* Hides the scrollbar */
+  }
+
+  .selectWrapper::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  .selectWrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners of the thumb */
+  }
+  
+  /* Scrollbar track */
+  .selectWrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 4px; /* Rounded corners of the track */
+  }
 
 .selectItem {
     padding: 10px;
@@ -16,5 +38,18 @@
     user-select: none;
 }
 
-.optionWrapper {
+.selectItem.activeWrapper {
+    position: relative;
+}
+
+.arrowImage {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+
+.reverse{
+  transform: translateY(-50%) rotateZ(180deg);
 }
