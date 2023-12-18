@@ -25,7 +25,7 @@ const Carousel: React.FC<Props> = ({children, count}) =>{
     return (
         <div className={styles.carouselOuterWrapper}>
             <div className={styles.leftMoveWrraper} onClick={handleLeft}>
-            <img className={`${styles.arrowImg} rotate-180`} src='./circle-with-arrow.png' />
+            {left !== 0 && <img className={`${styles.arrowImg} rotate-180`} src='./circle-with-arrow.png' />}
             </div>
             <div className={styles.carouselFrame}>
                 <div className={styles.carouselMovable} style={{width: `${wide*100}%`, transform: `translateX(-${(100*left)/wide}%)`, gridTemplateColumns: `repeat(${onScreen*wide}, 1fr)`}}>
@@ -33,7 +33,7 @@ const Carousel: React.FC<Props> = ({children, count}) =>{
                 </div>
             </div>
             <div className={styles.leftMoveWrraper} onClick={handleRight}>
-                <img className={styles.arrowImg} src='./circle-with-arrow.png' />
+                {left < wide -1 && <img className={styles.arrowImg} src='./circle-with-arrow.png' />}
             </div>
         </div>
     )

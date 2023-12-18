@@ -10,6 +10,7 @@ interface Props {
 const CarouselCard: React.FC<Props> = ({brand, title, price, preview}) =>{
     return (
         <div className={styles.outerWrapper}>
+            <div className={styles.thumbnailWrapper}></div>
             <img className={styles.thumbnail}  src={preview}/>
             <h3 className={styles.category}>{brand}</h3>
             <h3 className={styles.title}>{title}</h3>
