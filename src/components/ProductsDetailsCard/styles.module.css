@@ -1,0 +1,47 @@
+.detailCardWrapper {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.thumbnail {
+    height: 300px;
+    max-width: 100%;
+    border: 2px solid #A8620A;
+}
+
+.brandName {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ratings {
+    display: flex;
+    gap: 10px;
+}
+
+.discount {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.leftCard {
+    padding: 20px;
+}
+
+.rightCard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.star {
+ height: 20px; 
+}

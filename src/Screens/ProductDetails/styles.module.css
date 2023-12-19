@@ -1,0 +1,11 @@
+.productHeadline {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.carouselWrapper {
+    width: 100%;
+    padding-top: 2rem;
+}
