@@ -23,6 +23,21 @@
 
 .gridWrap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-gap: 100px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridUnit {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .gridWrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .gridUnit {
+        padding: 40px;
+    }
 }

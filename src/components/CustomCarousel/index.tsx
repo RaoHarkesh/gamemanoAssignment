@@ -10,8 +10,16 @@ interface Props {
 
 const Carousel: React.FC<Props> = ({children, count}) =>{
     const [left, setLeft] = useState(0);
-    const isMobile = useBreakpoint(768)
-    let onScreen = isMobile ? 2 : 4;
+    const isDesktop = useBreakpoint('desktop');
+    const isTablet =  useBreakpoint('tablet');;
+    let onScreen;
+    if(isTablet){
+        onScreen = 2;
+    }else if(isDesktop){
+        onScreen = 3
+    }else{
+        onScreen = 4
+    }
     let wide = Math.ceil(count/onScreen);
 
     const handleLeft = () =>{
@@ -25,7 +33,9 @@ const Carousel: React.FC<Props> = ({children, count}) =>{
             setLeft(left+1)
         }
     }
+
     return (
+        <>
         <div className={styles.carouselOuterWrapper}>
             <div className={styles.leftMoveWrraper} onClick={handleLeft}>
             {left !== 0 && <img className={`${styles.arrowImg} rotate-180`} src='/circle-with-arrow.png' />}
@@ -39,6 +49,11 @@ const Carousel: React.FC<Props> = ({children, count}) =>{
                 {left < wide -1 && <img className={styles.arrowImg} src='/circle-with-arrow.png' />}
             </div>
         </div>
+        <div  className={styles.bottomControl}>
+            {left !== 0 && <img  onClick={handleLeft} className={`${styles.arrowImg} rotate-180`} src='/circle-with-arrow.png' />}
+            {left < wide -1 && <img  onClick={handleRight} className={styles.arrowImg} src='/circle-with-arrow.png' />}
+        </div>
+        </>
     )
 }
 

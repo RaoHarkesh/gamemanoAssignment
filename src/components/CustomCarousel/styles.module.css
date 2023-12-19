@@ -23,6 +23,10 @@
     transition: 0.4s;
 }
 
+.bottomControl {
+    display: none;
+}
+
 .arrowImg {
     width: 50px;
     height: 50px;
@@ -30,7 +34,14 @@
 
 @media (max-width: 768px){
     .leftMoveWrraper {
-        display: none;
+        display: NONE;
+    }
+
+    .bottomControl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .carouselFrame {
