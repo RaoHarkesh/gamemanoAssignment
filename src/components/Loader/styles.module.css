@@ -1,0 +1,27 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 5px solid rgba(0, 0, 0, 0.1); /* Border to create the circle */
+  border-top: 5px solid white; /* Top border to show the loading progress */
+  border-radius: 50%; /* Creates a circular shape */
+  width: 50px;
+  height: 50px;
+    animation: rotate 2s linear infinite;
+}
+
+.loaderWrapper {
+    background-color: #26072C;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
