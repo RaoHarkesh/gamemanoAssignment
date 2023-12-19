@@ -27,3 +27,19 @@
     width: 50px;
     height: 50px;
 }
+
+@media (max-width: 768px){
+    .leftMoveWrraper {
+        display: none;
+    }
+
+    .carouselFrame {
+        width: 100%
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .carouselFrame {
+        width: 100%;
+    }
+}

@@ -5,6 +5,7 @@ import HeroButton from "@/components/HeroButton";
 import ProductCard from "@/components/ProductCard";
 import Carousel from "@/components/CustomCarousel";
 import CarouselCard from "@/components/CarouselCard";
+import Loader from "@/components/Loader";
 
 interface Props {
     products: Array<Product> | null
@@ -48,7 +49,7 @@ const HomePage: React.FC<Props> = ({products}) =>{
             </div>
          <img className={styles.proHeadline} src="./product-headline.png" />
             <div className={styles.gridWrap}>
-            {products?.map((ele)=><ProductCard key={ele.id} id={ele.id} thumbnail={ele.images[1]} title={ele.title} />)}
+            {products?.map((ele)=><div className={styles.gridUnit}><ProductCard key={ele.id} id={ele.id} thumbnail={ele.images[1]} title={ele.title} /></div>)}
             </div>
          </div>
         </div>

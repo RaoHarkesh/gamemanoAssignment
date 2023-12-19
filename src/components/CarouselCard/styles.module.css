@@ -28,3 +28,10 @@
     height: 200px;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    .outerWrapper {
+        width: 100%;
+    }
+    
+}
