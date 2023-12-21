@@ -31,7 +31,7 @@ const StyledSelect: React.FC<Props> = ({handleFilterChange}) =>{
 
     useEffect(() => {
       console.log("run")
-        const handleClickOutside = (event) => {
+        const handleClickOutside = (event: any) => {
           if (selectDiv.current && !selectDiv.current.contains(event.target)) {
             setOpen(false);
           }

@@ -34,10 +34,13 @@ function useBreakpoint(breakpoint1: Breakpoint, breakpoint2?: Breakpoint ) {
   }
 
   const handleResize = () => {
-    if(breakpoint2){
-        setIsMobile(window.innerWidth >= breakpoints[breakpoint1].min && window.innerWidth < breakpoints[breakpoint2].min )
-    }else{
-        setIsMobile(window.innerWidth <= breakpoints[breakpoint1].max)
+    const currentBreakpoint = breakpoints[breakpoint1];
+
+    if (currentBreakpoint.max !== undefined) {
+      setIsMobile(window.innerWidth <= currentBreakpoint.max);
+    } else {
+      // Handle cases where 'max' might not be defined (e.g., extralargeDesktop)
+      setIsMobile(window.innerWidth >= currentBreakpoint.min);
     }
 };
 
