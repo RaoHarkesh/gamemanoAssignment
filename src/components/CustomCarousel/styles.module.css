@@ -32,6 +32,10 @@
     height: 50px;
 }
 
+.opaque {
+    opacity: 0.5;
+}
+
 @media (max-width: 768px){
     .leftMoveWrraper {
         display: NONE;

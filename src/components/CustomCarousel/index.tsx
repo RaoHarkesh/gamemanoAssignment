@@ -50,8 +50,8 @@ const Carousel: React.FC<Props> = ({children, count}) =>{
             </div>
         </div>
         <div  className={styles.bottomControl}>
-            {left !== 0 && <img  onClick={handleLeft} className={`${styles.arrowImg} rotate-180`} src='/circle-with-arrow.png' />}
-            {left < wide -1 && <img  onClick={handleRight} className={styles.arrowImg} src='/circle-with-arrow.png' />}
+            {<img  onClick={handleLeft} className={`${styles.arrowImg} rotate-180 ${left === 0 && styles.opaque}`} src='/circle-with-arrow.png' />}
+            {<img  onClick={handleRight} className={`${styles.arrowImg} ${left === wide -1 && styles.opaque}`} src='/circle-with-arrow.png' />}
         </div>
         </>
     )
