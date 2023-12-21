@@ -9,8 +9,11 @@
 
 .footerWrapperInner {
     height: 300px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+}
+
+.footerLeft {
+    width: 50%;
 }
 
 .footerlogo {
@@ -27,6 +30,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.footerRight {
+    flex: 1;
+}
+
+.footerRight {
+    display: flex;
 }
 
 .links {
@@ -61,5 +72,10 @@
     
     .footerWrapperInner {
         height: unset;
+        flex-direction: column;
+    }
+
+    .footerLeft {
+        width: 100%;
     }
 }
