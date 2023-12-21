@@ -12,9 +12,13 @@ const Navbar = () =>{
                 </Link>
                 <div className={styles.navinnerright}>
                     <div className={styles.navbuttonwrap}>
-                        <button className={styles.navbuttonprimary}>Home</button>         
+                        <Link href={'/'}>
+                        <button className={styles.navbuttonprimary}>Home</button>
+                        </Link>         
                     </div>
+                    <Link href={'/products'}>
                     <button className={styles.navbuttonsecondary}>Products</button>
+                    </Link>
                 </div>
             </div>
         </div>
