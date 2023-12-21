@@ -1,15 +1,17 @@
 .detailCardWrapper {
-    width: fit-content;
     display: flex;
     margin: 0 auto;
+    width: calc(100% - 40px);
     background-color: white;
     border-radius: 16px;
+    max-width: fit-content;
 }
 
 .thumbnail {
     height: 300px;
-    max-width: 100%;
     border: 2px solid #A8620A;
+    width: 100%;
+    object-fit: contain;
 }
 
 .brandName {
@@ -33,6 +35,7 @@
 
 .rightCard {
     padding: 20px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -44,4 +47,11 @@
 
 .star {
  height: 20px; 
+}
+
+@media (max-width: 1024px) {
+    .detailCardWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }
