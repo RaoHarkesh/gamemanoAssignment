@@ -27,7 +27,7 @@ const ProductDetailCard: React.FC<Props> = ({productDetails}) =>{
             <div className={styles.rightCard}>
                 <h3 className={styles.brandName}>{productDetails.brand}</h3>
                 <div className={styles.ratings}>
-                    {ratingArr.map(() => <img src='/star.png' className={styles.star} />)}
+                    {ratingArr.map(() => <img src='/star.png' className={styles.star} key={Date.now()} />)}
                     <span className={styles.ratingText}>{`( ${Math.ceil(productDetails.rating)} )`}</span>    
                 </div>
                 <p className={styles.description}>{productDetails.description}</p>
