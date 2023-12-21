@@ -48,7 +48,7 @@ const Products: React.FC<Props> = () =>{
                 <StyledSelect handleFilterChange={handleChange} />
             </div>
             <div className={styles.gridWrap}>
-            {products?.map((ele)=><div className={styles.gridUnit}><ProductCard key={ele.id} id={ele.id} thumbnail={ele.images[1]} title={ele.title} /></div>)}
+            {products?.map((ele)=><div key={ele.id} className={styles.gridUnit}><ProductCard id={ele.id} thumbnail={ele.images[1]} title={ele.title} /></div>)}
             </div>
         </div>
         </div>
