@@ -1,23 +1,21 @@
-"use server"
+"use server";
 
-import HomePage from "@/Screens/Home"
+import HomePage from "@/Screens/Home";
 
-const HomeScreen = async () =>{
+const HomeScreen = async () => {
   let products;
   try {
-    const response = await fetch('https://dummyjson.com/products');
+    const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
     products = data.products;
-  }
-  catch{
-    products = null
+  } catch {
+    products = null;
   }
   return (
     <>
-    <HomePage products={products} />
+      <HomePage products={products} />
     </>
-  )
+  );
+};
 
-}
-
-export default HomeScreen
+export default HomeScreen;

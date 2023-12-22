@@ -1,9 +1,11 @@
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
-const Loader = () =>{
-    return <div className={styles.loaderWrapper}>
-        <div className={styles.loader} />
+const Loader = () => {
+  return (
+    <div className={styles.loaderWrapper}>
+      <div className={styles.loader} />
     </div>
-}
+  );
+};
 
-export default Loader
+export default Loader;

@@ -30,6 +30,11 @@
     padding: 10px;
 }
 
+.loadImage {
+    display: flex;
+    height: 100%;
+}
+
 
 @media (max-width: 768px) {
     .gridWrap {
