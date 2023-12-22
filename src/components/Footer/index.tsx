@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./styles.module.css";
 
 const Footer = () => {
@@ -17,8 +18,12 @@ const Footer = () => {
           <div className={styles.footerRight}>
             <div className={styles.footerCol}>
               <img className={styles.footerlogo} src="/usefull-links.jpg" />
-              <span className={styles.links}>Home</span>
-              <span className={styles.links}>Product</span>
+              <Link href={"/"}>
+                <span className={styles.links}>Home</span>
+              </Link>
+              <Link href={"/products"}>
+                <span className={styles.links}>Products</span>
+              </Link>
               <span className={styles.links}>Contact</span>
               <span className={styles.links}>About US</span>
             </div>

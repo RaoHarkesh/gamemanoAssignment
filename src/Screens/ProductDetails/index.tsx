@@ -25,7 +25,7 @@ const ProductDetailsScreen: React.FC<Props> = ({ productDetails }) => {
         <h1 className={styles.productHeadline}>{productDetails.brand}</h1>
         <ProductDetailCard productDetails={productDetails} />
         <div className={styles.carouselWrapper}></div>
-        <Carousel count={productDetails.images.length || 0}>
+        <Carousel count={productDetails.images?.length || 0}>
           <>
             {productDetails.images.map((ele) => (
               <div key={ele} className={styles.gridUnit}>
