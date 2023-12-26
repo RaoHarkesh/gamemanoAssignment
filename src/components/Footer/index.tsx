@@ -38,6 +38,7 @@ const Footer = () => {
                   className={styles.socialMediaLogo}
                 />
                 <img src="/insta-logo.jpg" className={styles.socialMediaLogo} />
+
                 <img
                   src="/twitter-logo.jpg"
                   className={styles.socialMediaLogo}

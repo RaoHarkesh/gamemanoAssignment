@@ -1,0 +1,41 @@
+.inputBox {
+  padding: 0px 10px;
+}
+
+.optionWrapper {
+  top: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  z-index: 1000;
+  max-height: 300px;
+  width: 100%;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.option:hover {
+  border: 1px solid black;
+}
+
+@media (max-width: 480px) {
+  .inputWrapper {
+    display: none;
+  }
+}

@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "./styles.module.css";
 import Link from "next/link";
+import Search from "../GlobalSearch";
 
-const Navbar = () => {
+const Navbar = async () => {
+  let products;
+  try {
+    const response = await fetch("https://dummyjson.com/products");
+    const data = await response.json();
+    products = data.products;
+  } catch {
+    products = null;
+  }
   return (
     <>
       <div className={styles.navouter}>
@@ -11,6 +20,7 @@ const Navbar = () => {
             <img className={styles.navlogo} src="/logo.jpg" />
           </Link>
           <div className={styles.navinnerright}>
+            <Search products={products} />
             <div className={styles.navbuttonwrap}>
               <Link href={"/"}>
                 <button className={styles.navbuttonprimary}>Home</button>
